@@ -3,4 +3,4 @@ RUN apk add --no-cache git && pip install gitdb2==3.0.0 trufflehog
 RUN adduser -S truffleHog
 USER truffleHog
 WORKDIR /proj
-CMD [ "/bin/bash", "-ce", "tail -f /dev/null" ]
+CMD [ "tail -f /dev/null" ]
