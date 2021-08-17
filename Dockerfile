@@ -4,4 +4,4 @@ RUN adduser -S truffleHog
 USER truffleHog
 WORKDIR /proj
 ENTRYPOINT [ "trufflehog" ]
-CMD [ "tail -f /dev/null" ]
+CMD [ "/bin/bash", "-ce", "tail -f /dev/null" ]
