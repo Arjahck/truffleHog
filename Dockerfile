@@ -4,4 +4,4 @@ RUN adduser -S truffleHog
 USER truffleHog
 WORKDIR /proj
 ENTRYPOINT [ "trufflehog" ]
-CMD [ "/bin/bash", "-ce", "tail -f /dev/null" ]
+CMD [ "while true; do foo; sleep 2; done" ]
