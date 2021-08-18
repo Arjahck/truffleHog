@@ -4,4 +4,5 @@ RUN adduser -S truffleHog
 USER truffleHog
 WORKDIR /proj
 ENTRYPOINT [ "trufflehog" ]
-CMD [ "while true; do foo; sleep 2; done" ]
+CMD [ "/bin/bash -c 'trap : TERM INT; sleep 9999999 & wait'"]
+
